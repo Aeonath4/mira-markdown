@@ -36,6 +36,11 @@
         }
       ]
     },
+    "configurationDefaults": {
+      "[markdown]": {
+        "editor.stickyScroll.enabled": false
+      }
+    },
     "keybindings": [
       {
         "command": "miraMarkdown.showPreview",

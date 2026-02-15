@@ -6,7 +6,7 @@ A markdown extension for VS Code and Cursor with enhanced heading decorations an
 
 ### Preview Button
 
-Click the **Preview** button in the status bar (bottom-left) to open a rendered preview of your markdown file. The button appears automatically when editing a markdown file. You can also use the keyboard shortcut `Ctrl+Shift+V` (`Cmd+Shift+V` on Mac).
+Click the **Preview** button in the status bar to open a rendered preview of your markdown file. The button appears automatically when editing a markdown file. You can also use the keyboard shortcut `Ctrl+Shift+V` (`Cmd+Shift+V` on Mac).
 
 The preview renders your markdown as it would appear on a web page — proportional fonts, styled headings, code blocks, tables, and more.
 
@@ -22,6 +22,10 @@ Headings are visually distinct in source mode with bold styling and scaled font 
 ### No Split Pane
 
 The built-in side-by-side markdown preview is intentionally disabled. Mira Markdown opens the preview as a separate tab so you can focus on one view at a time — either source or preview, not both competing for screen space.
+
+### No Sticky Scroll
+
+This is also disabled for markdown files.
 
 ## Commands
 
