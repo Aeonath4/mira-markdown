@@ -2,6 +2,10 @@
 
 A markdown extension for VS Code and Cursor with enhanced heading decorations and a clean rendered preview.
 
+## Version
+
+0.1.1
+
 ## Features
 
 ### Preview Button
