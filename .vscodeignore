@@ -1,0 +1,7 @@
+.vscode/**
+src/**
+.claude/**
+tsconfig.json
+requirements_phase1.txt
+screenshot.png
+**/*.map
