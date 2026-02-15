@@ -2,7 +2,7 @@
   "name": "mira-markdown",
   "displayName": "Mira Markdown",
   "description": "Markdown preview with enhanced heading decorations for VS Code and Cursor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "miranovastudios",
   "icon": "icon.png",
   "repository": {
