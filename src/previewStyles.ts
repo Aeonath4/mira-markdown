@@ -36,20 +36,24 @@ export function getPreviewCss(): string {
     code {
       font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
       font-size: 0.85em;
-      background-color: #f6f8fa;
+      background-color: #eef1f4;
+      color: #1f2933;
       padding: 0.2em 0.4em;
       border-radius: 3px;
     }
 
     pre {
-      background-color: #f6f8fa;
+      background-color: #eef2f6;
       padding: 16px;
       border-radius: 6px;
       overflow-x: auto;
+      border: 1px solid #dde3ea;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
     }
 
     pre code {
       background: none;
+      color: #1f2933;
       padding: 0;
     }
 

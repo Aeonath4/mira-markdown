@@ -4,7 +4,7 @@ A markdown extension for VS Code and Cursor with enhanced heading decorations an
 
 ## Version
 
-0.1.2
+0.1.3
 
 ## Features
 
