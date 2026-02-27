@@ -2,7 +2,7 @@
   "name": "mira-markdown",
   "displayName": "Mira Markdown",
   "description": "Markdown preview with enhanced heading decorations for VS Code and Cursor",
-  "version": "0.1.5",
+  "version": "1.6.0",
   "publisher": "miranovastudios",
   "icon": "icon.png",
   "repository": {
@@ -38,6 +38,11 @@
         "command": "miraMarkdown.showPreview",
         "title": "MiraMarkDown: Show Preview",
         "icon": "$(open-preview)"
+      },
+      {
+        "command": "miraMarkdown.closePreview",
+        "title": "MiraMarkDown: Close Preview",
+        "icon": "$(close)"
       }
     ],
     "menus": {
@@ -45,6 +50,13 @@
         {
           "command": "miraMarkdown.showPreview",
           "when": "resourceLangId == markdown",
+          "group": "navigation"
+        }
+      ],
+      "webview/title": [
+        {
+          "command": "miraMarkdown.closePreview",
+          "when": "webviewId == miraMarkdown.preview",
           "group": "navigation"
         }
       ]

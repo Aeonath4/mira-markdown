@@ -4,7 +4,7 @@ A markdown extension for VS Code and Cursor with enhanced heading decorations, s
 
 ## Version
 
-0.1.5
+1.6.0
 
 ## Features
 
@@ -13,6 +13,8 @@ A markdown extension for VS Code and Cursor with enhanced heading decorations, s
 Click the **Preview** button in the status bar to open a rendered preview of your markdown file. The button appears automatically when editing a markdown file. You can also use the keyboard shortcut `Ctrl+Shift+V` (`Cmd+Shift+V` on Mac).
 
 The preview renders your markdown as it would appear on a web page - proportional fonts, styled headings, code blocks, tables, and more.
+
+When the preview tab is active, the same button location changes to **Close Preview** so you can quickly return to source mode. The preview tab title also includes a **Close Preview** action.
 
 ### Live Preview Refresh
 
@@ -55,6 +57,7 @@ This is also disabled for markdown files.
 | Command | Description |
 |---------|-------------|
 | `MiraMarkDown: Show Preview` | Open rendered preview |
+| `MiraMarkDown: Close Preview` | Close preview and return to source |
 
 ## Requirements
 
