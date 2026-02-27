@@ -40,7 +40,7 @@ export function showPreview(context: vscode.ExtensionContext): void {
     'miraMarkdown.preview',
     `Preview: ${baseName(document.uri)}`,
     { viewColumn, preserveFocus: false },
-    { enableScripts: false }
+    { enableScripts: false, enableCommandUris: true }
   );
 
   currentPanel.webview.html = buildHtml(document.getText());
@@ -99,10 +99,49 @@ function buildHtml(markdownSource: string): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>${css}</style>
+  <style>
+    ${css}
+    .mira-preview-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 16px;
+      background: var(--vscode-editor-background);
+      border-bottom: 1px solid var(--vscode-panel-border);
+    }
+    .mira-preview-close {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--vscode-button-border, transparent);
+      background: var(--vscode-button-background);
+      color: var(--vscode-button-foreground);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .mira-preview-close:hover {
+      background: var(--vscode-button-hoverBackground);
+    }
+    .mira-preview-content {
+      padding-top: 8px;
+    }
+  </style>
 </head>
 <body>
-  ${rendered}
+  <div class="mira-preview-toolbar">
+    <a class="mira-preview-close" href="command:miraMarkdown.closePreview" title="Close preview">
+      Close Preview
+    </a>
+  </div>
+  <div class="mira-preview-content">
+    ${rendered}
+  </div>
 </body>
 </html>`;
 }

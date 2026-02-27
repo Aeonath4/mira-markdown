@@ -66,11 +66,11 @@ export function getPreviewCss(): string {
     }
 
     code {
-      background-color: #eceff3;
-      color: #111827;
-      padding: 2px 4px;
-      border-radius: 3px;
-      border: 1px solid #d1d5db;
+      background-color: transparent;
+      color: inherit;
+      padding: 0;
+      border-radius: 0;
+      border: none;
       font-family: "Roboto Mono", Consolas, "Courier New", monospace;
       font-size: 14px;
     }
@@ -137,11 +137,11 @@ export function getPreviewCss(): string {
     }
 
     :not(pre) > code[class*="language-"] {
-      background-color: #eceff3;
-      color: #111827;
-      border: 1px solid #d1d5db;
-      padding: 2px 4px;
-      border-radius: 3px;
+      background-color: transparent;
+      color: inherit;
+      border: none;
+      padding: 0;
+      border-radius: 0;
     }
 
     .token.type {

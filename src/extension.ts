@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext): void {
 
   // Status bar preview button — always visible for markdown files
   previewButton = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 100);
-  previewButton.text = '$(open-preview) Preview';
+  previewButton.text = '$(comment) Preview';
   previewButton.tooltip = 'Open rendered preview';
   previewButton.command = 'miraMarkdown.showPreview';
   context.subscriptions.push(previewButton);
@@ -49,7 +49,7 @@ function updateButton(): void {
 
   const editor = vscode.window.activeTextEditor;
   if (editor?.document.languageId === 'markdown') {
-    previewButton.text = '$(open-preview) Preview';
+    previewButton.text = '$(comment) Preview';
     previewButton.tooltip = 'Open rendered preview';
     previewButton.command = 'miraMarkdown.showPreview';
     previewButton.show();
@@ -71,3 +71,5 @@ function isPreviewTabActive(): boolean {
 export function deactivate(): void {
   // Cleanup handled by disposables
 }
+
+
