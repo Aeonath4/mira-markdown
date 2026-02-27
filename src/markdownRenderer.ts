@@ -1,8 +1,10 @@
 import MarkdownIt from 'markdown-it';
 import Prism from 'prismjs';
 import loadLanguages from 'prismjs/components/index.js';
+import prismComponents from 'prismjs/components.json';
 
-loadLanguages(['python', 'javascript', 'bash', 'markup', 'clike']);
+const prismLanguageIds = Object.keys(prismComponents.languages).filter((languageId) => languageId !== 'meta');
+loadLanguages(prismLanguageIds);
 
 Prism.languages.lyric = {
   comment: {
@@ -35,6 +37,8 @@ function normalizeLanguage(lang?: string): string {
       return 'python';
     case 'js':
       return 'javascript';
+    case 'ts':
+      return 'typescript';
     case 'sh':
     case 'shell':
       return 'bash';

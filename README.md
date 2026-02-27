@@ -1,6 +1,6 @@
 # Mira Markdown
 
-A markdown extension for VS Code and Cursor with enhanced heading decorations and a clean rendered preview.
+A markdown extension for VS Code and Cursor with enhanced heading decorations, syntax highlighting in the preview with Prism.js, lyric fence support, and support for output blocks.
 
 ## Version
 
@@ -27,7 +27,9 @@ Preview headings get generated `id` anchors so links like `[Installing](#1-insta
 
 ### Code Block Rendering
 
-- Language fences are syntax highlighted when supported
+- Code blocks in the preview are highlighted with Prism.js
+- Language fences are syntax highlighted for all bundled Prism.js languages
+- ` ```lyric ` fences are syntax highlighted
 - Plain fenced blocks (``` without a language) use the standard light code block style
 - ` ```output ` blocks use a dark terminal-style theme with an `Output` header bar
 
