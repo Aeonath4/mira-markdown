@@ -1,0 +1,125 @@
+{
+  "scopeName": "source.lyric",
+  "name": "Lyric",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#constants" },
+    { "include": "#modifiers" },
+    { "include": "#based_on" },
+    { "include": "#types" },
+    { "include": "#keywords" },
+    { "include": "#builtins" },
+    { "include": "#operators" },
+    { "include": "#punctuation" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "match": "#[^\\n]*",
+          "name": "comment.line.number-sign.lyric"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "begin": "\"",
+          "end": "\"",
+          "name": "string.quoted.double.lyric",
+          "patterns": [
+            {
+              "match": "\\\\.",
+              "name": "constant.character.escape.lyric"
+            }
+          ]
+        },
+        {
+          "begin": "'",
+          "end": "'",
+          "name": "string.quoted.single.lyric",
+          "patterns": [
+            {
+              "match": "\\\\.",
+              "name": "constant.character.escape.lyric"
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "match": "\\b0x[0-9A-Fa-f]+\\b|\\b[0-9]+(?:\\.[0-9]+)?\\b",
+          "name": "constant.numeric.lyric"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "match": "\\b(true|false|True|False|null|None)\\b",
+          "name": "constant.language.lyric"
+        }
+      ]
+    },
+    "modifiers": {
+      "patterns": [
+        {
+          "match": "\\b(public|private|protected)\\b",
+          "name": "storage.modifier.lyric"
+        }
+      ]
+    },
+    "based_on": {
+      "patterns": [
+        {
+          "match": "\\bbased\\s+on\\b",
+          "name": "keyword.control.lyric"
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "match": "\\b(def|class|var|god|bin|int|flt|str|rex|pyobject|arr|map|obj|dsk)\\b",
+          "name": "storage.type.lyric"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "match": "\\b(if|else|elif|end|while|for|in|return|break|continue|pass|try|catch|finally|throw|import|from|as|const|and|or|not|given|done|fade|importpy|case|raise)\\b",
+          "name": "keyword.control.lyric"
+        }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        {
+          "match": "\\b(print|input|range|open|type|isinstance|regex|exec|getopts)\\b",
+          "name": "support.function.builtin.lyric"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "match": "->>|->|<-|&&|\\|\\||\\||==|!=|<=|>=|<|>|[+\\-*/%=]",
+          "name": "keyword.operator.lyric"
+        }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        {
+          "match": "[\\[\\]\\(\\)\\{\\},\\.:]",
+          "name": "punctuation.separator.lyric"
+        }
+      ]
+    }
+  }
+}
