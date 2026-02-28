@@ -1,3 +1,4 @@
+// Copyright (c) 2026 MiraNova Studios
 export function getPreviewCss(): string {
   return `
     * {

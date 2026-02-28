@@ -1,7 +1,7 @@
 {
   "name": "mira-markdown",
   "displayName": "Mira Markdown",
-  "description": "Markdown preview with enhanced heading decorations for VS Code and Cursor",
+  "description": "Single-pane Markdown preview with code block syntax highlighting.",
   "version": "0.5.3",
   "publisher": "miranovastudios",
   "icon": "icon.png",

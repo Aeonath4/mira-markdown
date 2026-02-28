@@ -1,3 +1,4 @@
+// Copyright (c) 2026 MiraNova Studios
 import * as vscode from 'vscode';
 import { renderMarkdown } from './markdownRenderer';
 import { getPreviewCss } from './previewStyles';

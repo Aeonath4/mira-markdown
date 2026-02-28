@@ -1,3 +1,4 @@
+// Copyright (c) 2026 MiraNova Studios
 import * as vscode from 'vscode';
 import { activateHeadingDecorations } from './headingDecorations';
 import { isPreviewActive, showPreview, showSource } from './previewManager';
